@@ -10,7 +10,7 @@ export const chatEndpoint = (openai: any) => async (req: Request, res: Response)
 
     try {
         const answer = await openai.chat.completions.create({
-            model: 'gpt-4o',
+            model: 'gpt-4',
             messages,
             stream,
         });
